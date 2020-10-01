@@ -1,0 +1,57 @@
+.promo{
+	position: relative;
+	min-height: 750px;
+	top: -65px;
+	padding: 90px 75px;
+	background-color:#FFF800;
+	img{
+		position: absolute;
+		display: block;
+		width: 350px;
+		float: right;
+		margin: 15px 20px;
+		top: 20%;
+		right: 15%;
+
+	}
+	&__wrapper{
+		position: absolute;
+		font-size: 60px;
+		font-weight: 800;
+		color: black;
+		text-align: center;
+		top: 200px;
+		left: 10%;
+	}
+	&__descr{
+		position: absolute;
+		float: center;
+		width: 600px;
+		font-size: 17px;
+		font-weight: bold;
+		color: #151515;
+		text-align: center;
+		top: 50%;
+		left: 13%;
+	}
+	&__title{
+		position: absolute;
+		font-size: 60px;
+		font-weight: 800;
+		color: #C9007A;
+		text-align: center;
+		text-align: center;
+		top: 35%;
+		left: 16%;
+	}
+	.bubbly-button{
+		display: block;
+		margin: 0 auto;
+		position: absolute;
+		width: 200px;
+		height: 50px;
+		top: 67%;
+		left: 26%;
+	
+	}
+}

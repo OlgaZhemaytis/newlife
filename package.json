@@ -1,7 +1,6 @@
 {
   "name": "monitor",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +23,14 @@
     "dav": "^1.8.0",
     "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaZhemaytis/newlife.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OlgaZhemaytis/newlife/issues"
+  },
+  "homepage": "https://github.com/OlgaZhemaytis/newlife#readme",
+  "description": ""
 }
