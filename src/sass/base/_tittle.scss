@@ -1,0 +1,51 @@
+.tittle{
+	display: block;
+	margin: 0 auto;
+	color:#C9007A;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.round{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+	height: 100px;
+	&__line{
+		position: absolute;
+		top: 60%;
+		width: 100%;
+		height: 2px;
+		background-color: red;
+	}
+	&__ballr{
+		position: absolute;
+		top: 46%;
+		left: 44%;
+		transform: translate(-50% -50%);
+		width: 30px;
+		height: 30px;
+		background-color: #83004F;
+		list-style-type:none;
+		border-radius: 100%;
+		z-index: 5;
+		box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+		animation: roundBallr 15s ease-in-out 0.5s alternate, move 5s linear 2s;
+	}
+	&__balll{
+		position: absolute;
+		top: 46%;
+		left: 44%;
+		width: 30px;
+		height: 30px;
+		background-color: #83004F;
+		list-style-type:none;
+		border-radius: 100%;
+		z-index: 5;
+		box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+		animation: roundBalll 15s ease-in-out 0.5s alternate, move 5s linear 2s;
+	}
+}

@@ -1,0 +1,77 @@
+.portfolio{
+	min-height: 700px;
+	padding: 30px 100px;
+	background-color: rgba($color: #E439A1, $alpha: 0.21);
+	&__wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 1250px;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+
+	&__item{
+		position: relative;
+		display: block;
+		width: 350px;
+		height: 300px;		
+		margin: 0 1% 1% 0;
+		overflow: hidden;
+
+		
+	}
+	&__img{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+	}
+	&__box{
+		background-color: rgba(54, 55, 50, 0.79);
+		bottom: -68px;
+		color: #fff;
+		padding-top: 15px;
+		padding-left: 10px;
+		position: absolute;
+		cursor: pointer;
+		width: 100%;
+		text-align: left;
+		transition: 0.5s all;
+		&:hover{
+			bottom: 0px;
+		}
+	}
+	&__minibox{
+
+		width: 20px;
+		position: absolute;
+		top:50px;
+		right:45px;
+		transition: 0.5s all;
+		&:hover{
+			box-shadow: 0 0 5px 2px #E439A1;
+		}
+		
+	}
+	&__tittle{
+		color: #fff;
+		font-size: 17px;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover{
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	&__descr{
+		margin-top: 15px;
+		font-size: 14px;
+		text-align: left;
+		width: 60%;
+	}
+	&__imgmini{
+		width: 64px;
+	}
+}

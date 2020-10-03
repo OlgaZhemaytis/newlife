@@ -22,7 +22,7 @@
 		width: 500px;
 		float: right;
 		top: 5%;
-		left: 40%;
+		left: 30%;
 		z-index: 1;
 
 	}
@@ -58,18 +58,16 @@
 		left: 20%;
 	}
 	.bubbly-button{
-		display: block;
-		margin: 0 auto;
-		position: absolute;
 		width: 300px;
 		background-color: #FFF800;
 		font-weight: bold;
 		color: #151515;
 		height: 50px;
-		top: 60%;
+		position: absolute;
+
+		top: 50%;
 		left: 20%;
-	
-	}
+ 	}
 	&__vertical{
 		position: absolute;
 		float: left;
@@ -80,7 +78,7 @@
 		color: #C9007A;
 		text-transform: uppercase;
 		top: 80%;
-		left: 11%;
+		left: 7%;
 	}
 	
 }
