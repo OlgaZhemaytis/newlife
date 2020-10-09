@@ -1,14 +1,16 @@
 .contacts{
 	padding-top: 50px;
 	min-height: 500px;
-	background-color: #FFF800;
+	background-color: $second-color;
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex: wrap;
 	margin: 0;
+	overflow-x: hidden;
 	&__wrapper{
-		background-color: #C9007A;
+		background-color: $main-color;
 		padding: 25px 40px;
 		width: 110%;
 		box-shadow: 0 0 20px #3f3e3f;
@@ -20,7 +22,7 @@
 	&__title{
 		font-size: 20px;
 		font-weight: bold;
-		color: #C9007A;
+		color:$main-color;
 		text-align: center;
 		text-transform: uppercase;
 		width: 500px;
@@ -37,7 +39,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 500px;
+		width: 100%;
+		
 	}
 	&__descr{
 		display: block;

@@ -1,57 +1,68 @@
 .promo{
 	position: relative;
-	min-height: 750px;
-	top: -65px;
+	min-height: 650px;
+	top: 45px;
 	padding: 90px 75px;
-	background-color:#FFF800;
-	img{
-		position: absolute;
-		display: block;
-		width: 350px;
-		float: right;
-		margin: 15px 20px;
-		top: 20%;
-		right: 13%;
-
-	}
-	&__wrapper{
-		position: absolute;
+	background-color:$second-color;
+	overflow-x: hidden;
+	&__wrapper{		
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 60px;
 		font-weight: 800;
 		color: black;
 		text-align: center;
-		top: 200px;
-		left: 10%;
+		flex: wrap;
+		
 	}
-	&__descr{
+	&__img{
 		position: absolute;
-		float: center;
-		width: 600px;
+		display: block;	
+		width: 350px;
+		margin: 15px 50px;	
+		right: 10%;
+		top: 2%;
+	}
+	&__box{
+	 	display: block;
+		 float: left;
+		 width: 50%;
+		 padding-left: 50px;
+		 
+	}
+	
+	&__descr{
+		display: block;
+		width: 0 auto;	
+		margin-top: 30px;	
+		width: 100%;
 		font-size: 17px;
 		font-weight: bold;
 		color: #151515;
-		text-align: center;
-		top: 50%;
-		left: 13%;
+		text-align: left;		
+	}
+	&__descrlast{
+		display: none;
 	}
 	&__title{
-		position: absolute;
-		font-size: 60px;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+
+		font-size: 55px;
 		font-weight: 800;
-		color: #C9007A;
-		text-align: center;
-		text-align: center;
-		top: 35%;
-		left: 16%;
+		color: $main-color;
+		text-align: left;
 	}
-	// .bubbly-button{
-	// 	display: block;
-	// 	margin: 0 auto;
-	// 	position: absolute;
-	// 	width: 200px;
-	// 	height: 50px;
-	// 	top: 67%;
-	// 	left: 26%;
-	
-	// }
-}
+ .bubbly-button{
+ 	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+ 	width: 300px;
+	 height: 50px;
+	 float: left;
+	}
+
+}	
+

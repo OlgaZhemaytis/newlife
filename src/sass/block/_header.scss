@@ -1,24 +1,24 @@
 header {	
 	position: fixed;
 	height: 65px;
-	background-color: #FFF800;
+	background-color: $second-color;
 	margin-top: 0;
 	width: 100%;
  	height: 50px;
- 	z-index: 5;
+ 	z-index: 20;
 }
 .hamburger{
 display: none;
  }
 .menu {
-	position: absolute;
+	position: absolute;	
 	top: 50%;
-	left: 69%;
+	left: 65%;
 	transform: translate(-50%, -50%);
 	margin: 0;
 	padding: 0;
 	display: flex;
-	background-color:#FFF800;
+	background-color:$second-color;
  	&__item {
 		list-style: none;
 	 }

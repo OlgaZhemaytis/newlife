@@ -6,9 +6,11 @@
 	margin: 0 auto;
 }
 
+
+
 @import 'base/variables';
 @import 'base/button';
-@import 'base/animate';
+@import 'base/animates';
 @import 'base/tittle';
 @import 'block/header';
 @import 'block/promo';
@@ -17,6 +19,459 @@
 @import 'block/skils';
 @import 'block/portfolio';
 @import 'block/contacts';
-@import 'block/_footer';
-@import 'block/_text';
+@import 'block/footer';
+@import 'block/wave';
+@import 'block/_forme';
+
+
+@media screen and (max-width:991px){
+	
+	.menu{
+		left: 50%;
+		&__link{
+
+			margin: 0;
+			font-size: 18px;
+		}
+	}
+	.promo{
+		padding: 45px 35px;
+		&__img{
+			right: 0% ;
+			margin-left: 0 ;
+			margin-right: 15px ;
+		}
+		&__box{
+			padding-left: 0;
+			margin-top: 50px;
+		}
+		&__descr{
+			margin-top: 25px;
+		}
+		&__title{
+			line-height: 55px;
+		}
+	}
+	.about{
+		margin-top: 39px;
+		min-height: 300px;
+		&__img{
+		left: 30%;
+		width: 300px;	
+		}
+		&__vertical{
+			left: 4%;
+			font-size: 55px;
+			top: 70%;
+		}
+		&__left{
+			padding: 0;
+		}
+		&__box{
+			width: 60%;
+			float: center;
+			margin-right: 55px;
+		}
+		
+		 &__title{		
+			 font-size: 20px;
+			 
+		 }
+		&__descr{
+			font-size: 14px;
+			font-weight: 400;
+			margin-top: 15px;
+		 }
+	}
+	.contacts{
+		&__title{
+			text-align-last: left;
+		}
+		&__hr{
+			width: 100%;
+		}
+	}
+	.forme{
+		&__wrapper{
+			left: 2%;
+			width: 740px;
+		}
+	}
+
+
+}
+
+@media (max-width: 767px){
+	.menu{
+		position: fixed;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		top: 50%;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		padding: 20px 15px;
+		background-color: rgba(0,0 ,0 ,.8 );
+		transition: 0.6s all;
+		&_active{
+			left: 0;
+		}
+		&__item{
+	
+			padding-right: 0;
+			border: none;
+			margin-top: 10px;
+		}
+		&__link{
+			margin-top: 10px;
+			font-size: 22px;
+		}
+	}
+	.hamburger{
+		display: block;
+		position: absolute;
+		right: 10%;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 26px;
+		height: 12px;
+		span{
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: $main-dark;
+			margin-bottom: 2px;
+			transform: 0.5s all;
+		}
+		&_active{
+			span{
+				margin-bottom: -2px;
+				&:nth-child(1){
+					transform:  translateY(3px) rotate(-45deg);
+				}
+				&:nth-child(2){
+					display: none;
+				}
+				&:nth-child(3){
+					transform:translateY(3px) rotate(45deg);
+				}
+			}
+		}
+	}
+	.xs-hidden{
+		display: none;
+	}
+	.xs-visible{
+		display: block;
+	
+	}
+	.promo{
+		padding: 45px 35px;
+		.bubbly-button{
+			width: 200px;
+			font-size: 11px;
+		}
+		&__img{
+			right: 0% ;
+			top: 10%;
+			margin-left: 0 ;
+			margin-right: 15px ;
+			width: 300px;
+			z-index: 3;
+		}
+		&__box{
+			padding-left: 0;
+			margin-top: 50px;
+		}
+		&__descr{
+			margin-top: 70px;
+		}
+		&__title{
+			position: absolute;
+			line-height: 55px;
+			top:4%;
+			z-index: 5;
+		}
+	}
+	.about{
+		margin-top: 39px;
+		min-height: 300px;
+		&__img{
+		left: 26%;
+		top: 10%;
+		width: 250px;	
+		}
+		&__vertical{
+			left: 4%;
+			font-size: 40px;
+			top: 70%;
+		}
+		&__left{
+			padding: 0;
+		}
+		&__box{
+			width: 60%;
+			float: center;
+			margin-right: 55px;
+		}
+		
+		 &__title{		
+			 font-size: 20px;
+			 
+		 }
+		&__descr{
+			font-size: 11px;
+			font-weight: 400;
+			margin-top: 10px;
+		 }
+
+	}
+	.bubbly-button{
+		width: 200px;
+		&_yellow{
+			width: 200px;
+		}
+	}
+	.forme{
+		&__wrapper{
+			left: 2%;
+			width: 550px;
+		}
+		&__title{
+			right: 7%;
+			top: 8%;
+		}
+		&__descr{			
+			top: 15%;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		&__imgbg{
+			opacity: 0.5;
+			&_top{
+				opacity: 0.5;
+			}
+		}
+		&__tab{
+			width: 170px;
+			height: 40px;
+			font-size: 14;
+		}
+		&__tabs{
+			top: -42px;
+		}
+	}
+}
+
+@media (max-width: 575px){
+	.header{
+		width: 91%;
+	}
+	.portfolio{
+		margin: 0;
+		padding: 0;
+		&__content{
+			margin: 0;
+			padding: 0;
+		}
+		&__item{
+			width: 280px;
+			height: 250px;
+			margin: 0;
+		}
+		&__box{
+			bottom: -90px;
+		}
+	}
+	.social{
+		&__img{
+			width: 30px;
+			height: 30px;
+		}
+		&__descr{
+			font-size: 12px;
+		}
+		&__linkfooter{
+			font-size: 12px;
+		}
+		&__bot{
+			margin-top: 0;
+		}
+	}
+	.contacts{
+		margin-top: 20px;
+		&__title{
+			text-align: center;
+			width: 100%;
+			font-size: 16px;
+			margin-left: 15px;
+		}
+		
+		&__wrapper{
+			padding: 15px 5px;
+			width: 100%;
+			margin-right: 5px;
+		}
+		&__details{
+			width: 90%;
+			margin-left: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+		}
+		&__descr{
+			display: block;
+			
+			font-size: 14px;
+			text-align: center;
+			width: 100%;
+		}
+		&__img{
+			display: block;
+			margin: 10px 10px 15px 0;
+			width: 32px;
+		}
+	}
+	.technology{
+		padding: 100px 0px ;
+	}
+	.promo{
+		min-height: 450px;
+		padding: 45px 35px;
+		.bubbly-button{
+			position: absolute;
+			width: 200px;
+			font-size: 11px;
+			top: 63%;
+		}
+		&__img{
+			right: 0% ;
+			top: 9%;
+			margin-left: 0 ;
+			margin-right: 15px ;
+			width: 150px;
+			z-index: 3;
+		}
+		&__box{
+			padding-left: 0;
+			margin-top: 50px;
+		}
+		&__descr{
+			display: none;
+		}
+		&__title{
+			position: absolute;
+			line-height: 45px;
+			
+			z-index: 5;
+			position: absolute;
+			float: left;
+			transform: rotate(-90deg);
+			transform-origin:top  left  0;
+			font-size: 40px;
+			font-weight: 800;
+			color: $main-color;
+			text-transform: uppercase;
+			top: 57%;
+			left: 7%;
+		}
+		&__descrlast{
+			display: block;
+			position: absolute;
+			top: 57%;
+			left: 13%;
+			font-size: 13px;
+			font-weight: bold;
+			font-weight: 400;
+			margin-top: 10px;
+
+		}
+	}
+	.menu{
+		&_active{
+			left: 65px;
+		}
+	}
+	.about{
+		margin-top: 39px;
+		min-height: 300px;
+		&__img{
+		left: 26%;
+		top: 6%;
+		width: 150px;	
+		}
+		&__vertical{
+			left: 4%;
+			font-size: 40px;
+			top: 70%;
+		}
+		&__left{
+			padding: 0;
+		}
+		&__box{
+			width: 60%;
+			float: center;
+			margin-right: 55px;
+		}
+		
+		 &__title{	
+			 position: absolute;
+			 top: 39%;
+			 left:2%;	
+			 font-size: 20px;
+			 
+		 }
+		&__descr{
+			display: none;
+			font-size: 11px;
+			font-weight: 400;
+			margin-top: 10px;
+		 }
+
+	}
+	.bubbly-button{
+		width: 200px;
+		&_yellow{
+			position: absolute;
+			top: 56.5%;
+			width: 150px;
+		}
+	}
+	.forme{
+		&__wrapper{
+			left: 2%;
+			width: 270px;
+		}
+		&__img{
+			display: none;
+		}
+		&__title{
+			right: 7%;
+			top: 8%;
+		}
+		&__descr{	
+			width: 100%;		
+			top: 15%;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		&__imgbg{
+			opacity: 0.5;
+			&_top{
+				opacity: 0.5;
+			}
+		}
+		&__tab{
+			width: 85px;
+			height: 50px;
+			font-size: 11;
+			line-height: 20px;
+		}
+		&__tabs{
+			top: -52px;
+		}
+	}
+}
 

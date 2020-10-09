@@ -97,3 +97,52 @@
 	  transform: translateX(0px);
 	}
 }
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px /* анимируем свойство background-position */
+    }
+}
+/* Mozilla Firefox 5.0+ */
+@-moz-keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px
+    }
+}
+/* Safari 4.0+, Chrome 4.0+ */
+@-webkit-keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px
+    }
+}
+/* Opera 12.0+ */
+@-o-keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px
+    }
+}
