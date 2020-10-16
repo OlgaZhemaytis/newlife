@@ -105,7 +105,7 @@ function toggleSlide(item) {
 			// $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
 		});
 	});
-};
+}
 
 
 window.addEventListener('DOMContentLoaded', () => {

@@ -103,9 +103,9 @@ function toggleSlide(item) {
 			e.preventDefault();
 			$('.forme__item').eq(i).toggleClass('forme__item__active');
 			// $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-		})
+		});
 	});
-};
+}
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -122,6 +122,53 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
-        })
-    })
-})
+        });
+    });
+});
+
+
+$('form').submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		type: "POST",
+		url: "mailer/smart.php",
+		data: $(this).serialize()
+	}).done(function() {
+		$(this).find("input").val("");
+		$('#consultation, #order').fadeOut();
+		$('.overlay, #thanks').fadeIn('slow');
+
+		$('form').trigger('reset');
+	});
+	return false;
+});
+function validateForms(form){
+	$(form).validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2
+			},
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			name: {
+				required: "Пожалуйста, введите свое имя",
+				minlength: jQuery.validator.format("Введите {0} символа!")
+			},
+			
+			email: {
+			required: "Пожалуйста, введите свою почту",
+			email: "Неправильно введен адрес почты"
+			}
+		}
+		
+	});
+
+}
+validateForms('#mail-form');
+

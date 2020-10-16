@@ -1,6 +1,6 @@
 .bubbly-button{
 		display: inline-block;
-		font-size: 17px;
+		font-size: 20px;
 		padding: 5px 5px;
 		margin-top: 100px;
 		margin-bottom: 60px;
@@ -13,6 +13,7 @@
 		cursor: pointer;
 		position: relative;
 		text-align: center;
+		text-decoration: none;
 		line-height: 40px;
 		transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 		box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
