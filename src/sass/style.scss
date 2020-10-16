@@ -37,7 +37,7 @@
 	.promo{
 		padding: 45px 35px;
 		&__img{
-			right: 0% ;
+			right: -1% ;
 			margin-left: 0 ;
 			margin-right: 15px ;
 		}
@@ -167,7 +167,8 @@
 	
 	}
 	.promo{
-		padding: 45px 35px;
+		// padding: 45px 35px;
+		
 		.bubbly-button{
 			width: 200px;
 			font-size: 11px;
@@ -177,20 +178,27 @@
 			top: 10%;
 			margin-left: 0 ;
 			margin-right: 15px ;
-			width: 300px;
-			z-index: 3;
+			width: 450px;
+			z-index: 2;
+		}
+		&__imgbg{
+			right: -37% ;
+			top: 0;
+			width: 800px;
+			z-index: 0;
 		}
 		&__box{
 			padding-left: 0;
 			margin-top: 50px;
+			position: absolute;
+			z-index: 3;
 		}
 		&__descr{
 			margin-top: 70px;
 		}
 		&__title{
 			position: absolute;
-			line-height: 55px;
-			top:4%;
+			top: -16%;
 			z-index: 5;
 		}
 	}
@@ -257,6 +265,7 @@
 			width: 170px;
 			height: 40px;
 			font-size: 14;
+			line-height: 24px;
 		}
 		&__tabs{
 			top: -42px;
@@ -333,30 +342,40 @@
 			margin: 10px 10px 15px 0;
 			width: 32px;
 		}
+
 	}
 	.technology{
 		padding: 100px 0px ;
 	}
 	.promo{
 		min-height: 450px;
-		padding: 45px 35px;
+		padding: 0px 0px;
 		.bubbly-button{
 			position: absolute;
 			width: 200px;
 			font-size: 11px;
-			top: 63%;
+			bottom: 5%;
+			left:10%;
 		}
 		&__img{
-			right: 0% ;
-			top: 9%;
+			right: -20% ;
+			top: 18%;
 			margin-left: 0 ;
 			margin-right: 15px ;
-			width: 150px;
+			width: 280px;
 			z-index: 3;
+		}
+		&__imgbg{
+			right: -37% ;
+			top: 0;
+			width: 500px;
+			z-index: 0;
 		}
 		&__box{
 			padding-left: 0;
-			margin-top: 50px;
+			margin-top: 25px;
+			height: 350px;
+			z-index: 3;
 		}
 		&__descr{
 			display: none;
@@ -366,11 +385,10 @@
 			line-height: 45px;
 			
 			z-index: 5;
-			position: absolute;
 			float: left;
 			transform: rotate(-90deg);
 			transform-origin:top  left  0;
-			font-size: 40px;
+			font-size: 35px;
 			font-weight: 800;
 			color: $main-color;
 			text-transform: uppercase;
@@ -381,7 +399,7 @@
 			display: block;
 			position: absolute;
 			top: 57%;
-			left: 13%;
+			left: 10%;
 			font-size: 13px;
 			font-weight: bold;
 			font-weight: 400;
@@ -405,7 +423,7 @@
 		&__vertical{
 			left: 4%;
 			font-size: 40px;
-			top: 70%;
+			top: 73%;
 		}
 		&__left{
 			padding: 0;
@@ -421,6 +439,7 @@
 			 top: 39%;
 			 left:2%;	
 			 font-size: 20px;
+			 z-index: 3;
 			 
 		 }
 		&__descr{
@@ -435,14 +454,15 @@
 		width: 200px;
 		&_yellow{
 			position: absolute;
-			top: 56.5%;
+			top: 59.5%;
 			width: 150px;
 		}
 	}
 	.forme{
 		&__wrapper{
 			left: 2%;
-			width: 270px;
+			width: 90%;
+			min-height: 300px;
 		}
 		&__img{
 			display: none;
@@ -452,25 +472,48 @@
 			top: 8%;
 		}
 		&__descr{	
-			width: 100%;		
+			width: 90%;		
 			top: 15%;
 			font-weight: bold;
 			font-size: 14px;
 		}
 		&__imgbg{
 			opacity: 0.5;
+			width: 200px;
 			&_top{
 				opacity: 0.5;
+				width: 200px;
 			}
 		}
 		&__tab{
-			width: 85px;
+			width: 135px;
 			height: 50px;
 			font-size: 11;
 			line-height: 20px;
+			&__active{	
+				position: absolute;	
+				top: 50px;	
+				color: #fff;
+				background-color: $main-color;
+				border: none;
+		
+		}
 		}
 		&__tabs{
 			top: -52px;
+		}
+		&__list{
+			font-size: 15px;
+			line-height: 18px;
+			padding-left: 0;
+			li{
+				&:before{
+					right: -24px;
+					top: 4px;
+					width: 18px;
+					height: 18px;
+				}
+			}
 		}
 	}
 }

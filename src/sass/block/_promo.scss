@@ -5,6 +5,7 @@
 	padding: 90px 75px;
 	background-color:$second-color;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	&__wrapper{		
 		display: flex;
 		justify-content: center;
@@ -19,16 +20,29 @@
 	&__img{
 		position: absolute;
 		display: block;	
-		width: 350px;
+		width: 500px;
 		margin: 15px 50px;	
 		right: 10%;
-		top: 2%;
+		top: 7%;
+		z-index: 1;
+		
+	}
+	&__imgbg{
+		width: 950px;
+		position: absolute;
+		top: -4%;
+		right: -9px;
+		transform: rotate(0.5turn);
+		opacity: 0.9;
+		z-index: 0;
 	}
 	&__box{
 	 	display: block;
 		 float: left;
 		 width: 50%;
 		 padding-left: 50px;
+		 z-index: 2;
+		 position: absolute;
 		 
 	}
 	

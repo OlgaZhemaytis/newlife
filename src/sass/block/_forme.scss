@@ -26,7 +26,7 @@
 	}
 	&__img{
 		position: absolute;
-		bottom: 10%;
+		bottom: 0;
 		display: block;
 		width: 350px;
 		float: left;
@@ -41,7 +41,7 @@
 		top: 40%;
 		right: -10px;
 		opacity: 0.8;
-		z-index: 1;
+		// z-index: 8;
 		transform: skewX(15deg);
 		&_top{
 			position: absolute;
